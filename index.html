@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- to connect with daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- this link is for font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- this is for fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- this section is for customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-color': '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+    </style>
+</head>
+
+<body class="font-poppins">
+    <header>
+        <!-- this section is for navbar -->
+        <div class="navbar ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li class="text-[#707070]"><a>Home</a></li>
+
+                        <li><a>Services <i class="fa-light fa-chevron-right fa-xl" style="color: #5e6b82;"></i></a></li>
+                        <li><a>Cases</a></li>
+
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <img src="./images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+
+                    <li><a>Services <i class="fa-solid fa-chevron-right fa-xl" style="color: #134eb4;"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-chevron-right fa-xl" style="color: #134eb4;"></i></a></li>
+
+                    <li><a>Contact Us <i class="fa-solid fa-chevron-right fa-xl" style="color: #134eb4;"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-bg-color text-white">Free Consultation</a>
+            </div>
+        </div>
+        <!-- banner section -->
+        <div class="hero w-[420px] h-[400px] lg:w-[1050px] mx-auto lg:h-[450px]" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content p-0 mx-0">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-2xl lg:text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <div class="flex gap-5">
+                    <input type="text" class="h-[50px] w-[200px] lg:w-[300px] rounded-lg" placeholder= "   Search your services">
+                    <button class="btn bg-bg-color text-white border-none">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </header>
+
+   <main>
+    <div class="space-y-3 mt-20 mb-20">
+        <h1 class="flex justify-center items-center font-extrabold text-4xl">
+            The Legal Practice Area
+        </h1>
+        <p class="flex justify-center items-center text-center">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[400px] lg:w-[1050px] mx-auto">
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images//child.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Child Support</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images//criminal.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Criminal Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images//divorce.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Divorce Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images//education.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Education Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images//tax.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Tax Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+               <img src="./images//Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- question section -->
+    <div class="hero min-h-screen  gap-10 ">
+        <div class="hero-content flex-col lg:flex-row-reverse ">
+          <img src="/images/faq.png" class="max-w-sm rounded-lg " />
+          <div class="gap-5">
+            <div class="collapse collapse-plus bg-base-200 shadow-2xl">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 shadow-2xl">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 shadow-2xl">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact section -->
+      <div class="hero min-h-screen ">
+        <div class="hero-content flex-col lg:flex-row">
+          <div class="text-center lg:text-left">
+            <!-- cards section -->
+            <div class="grid grid-cols-2 gap-3 flex-1">
+            <div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images//location.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Address</h2>
+                  <p>A108 Adam Street,<br>
+                    New York, NY 535022</p>
+                  <div class="card-actions">
+                   
+                  </div>
+                </div>
+              </div><div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images//call.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Call Us</h2>
+                  <p>+88 01750 00 00 00 <br>
+                    +88 01750 00 00 00</p>
+                  <div class="card-actions">
+                   
+                  </div>
+                </div>
+              </div><div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images//email.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Email Us</h2>
+                  <p>info@gmail.com <br>
+                    info@gmail.com</p>
+                  <div class="card-actions">
+                   
+                  </div>
+                </div>
+              </div><div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images//time.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Working Hours</h2>
+                  <p>Mon-Fri: 9AM to 5PM <br>
+                    Sunday: 9AM to 1 PM</p>
+                  <div class="card-actions">
+                   
+                  </div>
+                </div>
+              </div>
+          </div></div>
+          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 flex-1">
+            <div class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="text" placeholder="email" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Password</span>
+                </label>
+                <input type="text" placeholder="password" class="input input-bordered" />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </main>
+   <!-- footer section -->
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
